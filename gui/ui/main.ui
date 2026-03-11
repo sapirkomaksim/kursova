@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.5" author="PygubuDesigner 0.41.4">
+  <project>
+    <settings />
+    <customwidgets />
+    <resources />
+  </project>
+
+  <object class="tk.Tk" id="mainwindow" named="True">
+    <property name="geometry">1000x600</property>
+    <property name="overrideredirect">false</property>
+    <property name="title" translatable="yes">Аптека — інформаційна система</property>
+
+    <child>
+      <object class="ttk.Notebook" id="nb_main" named="True">
+        <layout manager="pack">
+          <property name="expand">true</property>
+          <property name="fill">both</property>
+          <property name="side">top</property>
+        </layout>
+
+        <!-- ===== Категорії ===== -->
+        <child>
+          <object class="ttk.Notebook.Tab" id="tab_categories" named="True">
+            <property name="text" translatable="yes">Категорії</property>
+            <child>
+              <object class="ttk.Frame" id="container_categories" named="True">
+                <layout manager="pack">
+                  <property name="side">top</property>
+                  <property name="fill">both</property>
+                  <property name="expand">true</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- ===== Препарати ===== -->
+        <child>
+          <object class="ttk.Notebook.Tab" id="tab_medicines" named="True">
+            <property name="text" translatable="yes">Препарати</property>
+            <child>
+              <object class="ttk.Frame" id="container_medicines" named="True">
+                <layout manager="pack">
+                  <property name="side">top</property>
+                  <property name="fill">both</property>
+                  <property name="expand">true</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- ===== Постачальники ===== -->
+        <child>
+          <object class="ttk.Notebook.Tab" id="tab_suppliers" named="True">
+            <property name="text" translatable="yes">Постачальники</property>
+            <child>
+              <object class="ttk.Frame" id="container_suppliers" named="True">
+                <layout manager="pack">
+                  <property name="side">top</property>
+                  <property name="fill">both</property>
+                  <property name="expand">true</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- ===== Партії ===== -->
+        <child>
+          <object class="ttk.Notebook.Tab" id="tab_batches" named="True">
+            <property name="text" translatable="yes">Партії</property>
+            <child>
+              <object class="ttk.Frame" id="container_batches" named="True">
+                <layout manager="pack">
+                  <property name="side">top</property>
+                  <property name="fill">both</property>
+                  <property name="expand">true</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- ===== Покупці ===== -->
+        <child>
+          <object class="ttk.Notebook.Tab" id="tab_customers" named="True">
+            <property name="text" translatable="yes">Покупці</property>
+            <child>
+              <object class="ttk.Frame" id="container_customers" named="True">
+                <layout manager="pack">
+                  <property name="side">top</property>
+                  <property name="fill">both</property>
+                  <property name="expand">true</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- ===== Продаж ===== -->
+        <child>
+          <object class="ttk.Notebook.Tab" id="tab_sales" named="True">
+            <property name="text" translatable="yes">Продаж</property>
+            <child>
+              <object class="ttk.Frame" id="container_sales" named="True">
+                <layout manager="pack">
+                  <property name="side">top</property>
+                  <property name="fill">both</property>
+                  <property name="expand">true</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- ===== Звіти ===== -->
+        <child>
+          <object class="ttk.Notebook.Tab" id="tab_reports" named="True">
+            <property name="text" translatable="yes">Звіти</property>
+            <child>
+              <object class="ttk.Frame" id="container_reports" named="True">
+                <layout manager="pack">
+                  <property name="side">top</property>
+                  <property name="fill">both</property>
+                  <property name="expand">true</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- ===== Користувачі (тільки для admin) ===== -->
+        <child>
+          <object class="ttk.Notebook.Tab" id="tab_users" named="True">
+            <property name="text" translatable="yes">Користувачі</property>
+            <child>
+              <object class="ttk.Frame" id="container_users" named="True">
+                <layout manager="pack">
+                  <property name="side">top</property>
+                  <property name="fill">both</property>
+                  <property name="expand">true</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </object>
+</interface>
