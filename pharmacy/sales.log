@@ -1,0 +1,162 @@
+2026-04-13 11:07:06,190 | DEBUG | Module pygubu.plugins.ttk.ttkstdwidgets loaded.
+2026-04-13 11:07:06,190 | DEBUG | Setting widget tcl name to: login_root
+2026-04-13 11:07:06,212 | DEBUG | No layout information for: (ttk.Label, None).
+2026-04-13 11:07:06,214 | DEBUG | processing property text value
+2026-04-13 11:07:06,214 | DEBUG | setting property text = Вхід в систему
+2026-04-13 11:07:06,216 | DEBUG | Applying pack layout to None
+2026-04-13 11:07:06,216 | DEBUG | No layout information for: (ttk.Label, None).
+2026-04-13 11:07:06,220 | DEBUG | processing property text value
+2026-04-13 11:07:06,221 | DEBUG | setting property text = Логін
+2026-04-13 11:07:06,223 | DEBUG | Applying pack layout to None
+2026-04-13 11:07:06,224 | DEBUG | Setting widget tcl name to: entry_username
+2026-04-13 11:07:06,226 | DEBUG | Applying pack layout to entry_username
+2026-04-13 11:07:06,226 | DEBUG | No layout information for: (ttk.Label, None).
+2026-04-13 11:07:06,226 | DEBUG | processing property text value
+2026-04-13 11:07:06,226 | DEBUG | setting property text = Пароль
+2026-04-13 11:07:06,231 | DEBUG | Applying pack layout to None
+2026-04-13 11:07:06,232 | DEBUG | Setting widget tcl name to: entry_password
+2026-04-13 11:07:06,232 | DEBUG | processing property show value
+2026-04-13 11:07:06,232 | DEBUG | setting property show = *
+2026-04-13 11:07:06,236 | DEBUG | Applying pack layout to entry_password
+2026-04-13 11:07:06,236 | DEBUG | No layout information for: (ttk.Button, btn_login).
+2026-04-13 11:07:06,238 | DEBUG | Setting widget tcl name to: btn_login
+2026-04-13 11:07:06,239 | DEBUG | processing property text value
+2026-04-13 11:07:06,239 | DEBUG | setting property text = Увійти
+2026-04-13 11:07:06,239 | DEBUG | Applying pack layout to btn_login
+2026-04-13 11:07:06,239 | DEBUG | Applying pack layout to login_root
+2026-04-13 11:07:20,092 | DEBUG | Module pygubu.plugins.tk.tkstdwidgets loaded.
+2026-04-13 11:07:20,174 | DEBUG | Setting widget tcl name to: nb_main
+2026-04-13 11:07:20,174 | DEBUG | Setting widget tcl name to: container_categories
+2026-04-13 11:07:20,174 | DEBUG | Setting widget tcl name to: container_medicines
+2026-04-13 11:07:20,181 | DEBUG | Setting widget tcl name to: container_suppliers
+2026-04-13 11:07:20,182 | DEBUG | Setting widget tcl name to: container_batches
+2026-04-13 11:07:20,184 | DEBUG | Setting widget tcl name to: container_customers
+2026-04-13 11:07:20,184 | DEBUG | Setting widget tcl name to: container_sales
+2026-04-13 11:07:20,184 | DEBUG | Setting widget tcl name to: container_reports
+2026-04-13 11:07:20,190 | DEBUG | Setting widget tcl name to: container_users
+2026-04-13 11:07:20,190 | DEBUG | Applying pack layout to nb_main
+2026-04-13 11:07:20,222 | DEBUG | Setting widget tcl name to: categories_root
+2026-04-13 11:07:20,222 | DEBUG | Setting widget tcl name to: tree_categories
+2026-04-13 11:07:20,222 | DEBUG | processing property selectmode value
+2026-04-13 11:07:20,222 | DEBUG | setting property selectmode = extended
+2026-04-13 11:07:20,222 | DEBUG | Applying pack layout to tree_categories
+2026-04-13 11:07:20,222 | DEBUG | Setting widget tcl name to: btn_delete_category
+2026-04-13 11:07:20,228 | DEBUG | processing property text value
+2026-04-13 11:07:20,228 | DEBUG | setting property text = Видалити
+2026-04-13 11:07:20,228 | DEBUG | Applying pack layout to btn_delete_category
+2026-04-13 11:07:20,228 | DEBUG | No layout information for: (ttk.Button, btn_add_category).
+2026-04-13 11:07:20,228 | DEBUG | Setting widget tcl name to: btn_add_category
+2026-04-13 11:07:20,228 | DEBUG | processing property text value
+2026-04-13 11:07:20,228 | DEBUG | setting property text = Додати
+2026-04-13 11:07:20,228 | DEBUG | Applying pack layout to btn_add_category
+2026-04-13 11:07:20,228 | DEBUG | Applying pack layout to buttons_frame
+2026-04-13 11:07:20,228 | DEBUG | Applying pack layout to categories_root
+2026-04-13 11:07:20,244 | DEBUG | Setting widget tcl name to: medicines_root
+2026-04-13 11:07:20,248 | DEBUG | processing property height value
+2026-04-13 11:07:20,248 | DEBUG | setting property height = 600
+2026-04-13 11:07:20,248 | DEBUG | processing property width value
+2026-04-13 11:07:20,248 | DEBUG | setting property width = 600
+2026-04-13 11:07:20,248 | DEBUG | Setting widget tcl name to: toolbar_frame
+2026-04-13 11:07:20,250 | DEBUG | processing property height value
+2026-04-13 11:07:20,250 | DEBUG | setting property height = 100
+2026-04-13 11:07:20,250 | DEBUG | processing property width value
+2026-04-13 11:07:20,250 | DEBUG | setting property width = 100
+2026-04-13 11:07:20,250 | DEBUG | Setting widget tcl name to: btn_add
+2026-04-13 11:07:20,250 | DEBUG | processing property text value
+2026-04-13 11:07:20,250 | DEBUG | setting property text = Додати
+2026-04-13 11:07:20,250 | DEBUG | Applying pack layout to btn_add
+2026-04-13 11:07:20,250 | DEBUG | Setting widget tcl name to: btn_edit
+2026-04-13 11:07:20,257 | DEBUG | processing property text value
+2026-04-13 11:07:20,257 | DEBUG | setting property text = Редагувати
+2026-04-13 11:07:20,257 | DEBUG | Applying pack layout to btn_edit
+2026-04-13 11:07:20,257 | DEBUG | Setting widget tcl name to: btn_delete
+2026-04-13 11:07:20,257 | DEBUG | processing property text value
+2026-04-13 11:07:20,257 | DEBUG | setting property text = Видалити
+2026-04-13 11:07:20,261 | DEBUG | Applying pack layout to btn_delete
+2026-04-13 11:07:20,261 | DEBUG | Applying pack layout to toolbar_frame
+2026-04-13 11:07:20,261 | DEBUG | Setting widget tcl name to: tree_medicines
+2026-04-13 11:07:20,263 | DEBUG | processing property selectmode value
+2026-04-13 11:07:20,263 | DEBUG | setting property selectmode = extended
+2026-04-13 11:07:20,263 | DEBUG | Applying pack layout to tree_medicines
+2026-04-13 11:07:20,263 | DEBUG | Applying pack layout to medicines_root
+2026-04-13 11:07:20,277 | DEBUG | Setting widget tcl name to: suppliers_root
+2026-04-13 11:07:20,277 | DEBUG | Setting widget tcl name to: toolbar_frame
+2026-04-13 11:07:20,277 | DEBUG | Setting widget tcl name to: btn_add
+2026-04-13 11:07:20,277 | DEBUG | processing property text value
+2026-04-13 11:07:20,277 | DEBUG | setting property text = Додати
+2026-04-13 11:07:20,277 | DEBUG | Applying pack layout to btn_add
+2026-04-13 11:07:20,277 | DEBUG | Setting widget tcl name to: btn_edit
+2026-04-13 11:07:20,277 | DEBUG | processing property text value
+2026-04-13 11:07:20,283 | DEBUG | setting property text = Редагувати
+2026-04-13 11:07:20,283 | DEBUG | Applying pack layout to btn_edit
+2026-04-13 11:07:20,283 | DEBUG | Setting widget tcl name to: btn_delete
+2026-04-13 11:07:20,284 | DEBUG | processing property text value
+2026-04-13 11:07:20,284 | DEBUG | setting property text = Видалити
+2026-04-13 11:07:20,284 | DEBUG | Applying pack layout to btn_delete
+2026-04-13 11:07:20,284 | DEBUG | Applying pack layout to toolbar_frame
+2026-04-13 11:07:20,284 | DEBUG | Setting widget tcl name to: tree_suppliers
+2026-04-13 11:07:20,284 | DEBUG | processing property selectmode value
+2026-04-13 11:07:20,284 | DEBUG | setting property selectmode = browse
+2026-04-13 11:07:20,290 | DEBUG | Applying pack layout to tree_suppliers
+2026-04-13 11:07:20,291 | DEBUG | Applying pack layout to suppliers_root
+2026-04-13 11:07:20,304 | DEBUG | Setting widget tcl name to: batches_root
+2026-04-13 11:07:20,305 | DEBUG | Setting widget tcl name to: toolbar_frame
+2026-04-13 11:07:20,305 | DEBUG | Setting widget tcl name to: btn_add
+2026-04-13 11:07:20,305 | DEBUG | processing property text value
+2026-04-13 11:07:20,308 | DEBUG | setting property text = Додати
+2026-04-13 11:07:20,308 | DEBUG | Applying pack layout to btn_add
+2026-04-13 11:07:20,308 | DEBUG | Setting widget tcl name to: btn_edit
+2026-04-13 11:07:20,310 | DEBUG | processing property text value
+2026-04-13 11:07:20,310 | DEBUG | setting property text = Редагувати
+2026-04-13 11:07:20,310 | DEBUG | Applying pack layout to btn_edit
+2026-04-13 11:07:20,310 | DEBUG | Setting widget tcl name to: btn_delete
+2026-04-13 11:07:20,312 | DEBUG | processing property text value
+2026-04-13 11:07:20,312 | DEBUG | setting property text = Видалити
+2026-04-13 11:07:20,312 | DEBUG | Applying pack layout to btn_delete
+2026-04-13 11:07:20,312 | DEBUG | Applying pack layout to toolbar_frame
+2026-04-13 11:07:20,312 | DEBUG | Setting widget tcl name to: tree_batches
+2026-04-13 11:07:20,312 | DEBUG | processing property selectmode value
+2026-04-13 11:07:20,312 | DEBUG | setting property selectmode = browse
+2026-04-13 11:07:20,312 | DEBUG | Applying pack layout to tree_batches
+2026-04-13 11:07:20,312 | DEBUG | Applying pack layout to batches_root
+2026-04-13 11:07:20,334 | DEBUG | Setting widget tcl name to: customers_root
+2026-04-13 11:07:20,334 | DEBUG | Setting widget tcl name to: toolbar_frame
+2026-04-13 11:07:20,334 | DEBUG | Setting widget tcl name to: btn_add
+2026-04-13 11:07:20,334 | DEBUG | processing property text value
+2026-04-13 11:07:20,334 | DEBUG | setting property text = Додати
+2026-04-13 11:07:20,334 | DEBUG | Applying pack layout to btn_add
+2026-04-13 11:07:20,334 | DEBUG | Setting widget tcl name to: btn_edit
+2026-04-13 11:07:20,340 | DEBUG | processing property text value
+2026-04-13 11:07:20,340 | DEBUG | setting property text = Редагувати
+2026-04-13 11:07:20,340 | DEBUG | Applying pack layout to btn_edit
+2026-04-13 11:07:20,340 | DEBUG | Setting widget tcl name to: btn_delete
+2026-04-13 11:07:20,340 | DEBUG | processing property text value
+2026-04-13 11:07:20,340 | DEBUG | setting property text = Видалити
+2026-04-13 11:07:20,344 | DEBUG | Applying pack layout to btn_delete
+2026-04-13 11:07:20,344 | DEBUG | Applying pack layout to toolbar_frame
+2026-04-13 11:07:20,344 | DEBUG | Setting widget tcl name to: tree_customers
+2026-04-13 11:07:20,344 | DEBUG | processing property selectmode value
+2026-04-13 11:07:20,346 | DEBUG | setting property selectmode = browse
+2026-04-13 11:07:20,346 | DEBUG | Applying pack layout to tree_customers
+2026-04-13 11:07:20,346 | DEBUG | Applying pack layout to customers_root
+2026-04-13 11:07:20,348 | DEBUG | SalesService initialized
+2026-04-13 11:07:20,359 | DEBUG | Setting widget tcl name to: sales_root
+2026-04-13 11:07:20,359 | DEBUG | Setting widget tcl name to: main_frame
+2026-04-13 11:07:20,359 | DEBUG | Setting widget tcl name to: toolbar_frame
+2026-04-13 11:07:20,359 | DEBUG | Setting widget tcl name to: btn_new_sale
+2026-04-13 11:07:20,364 | DEBUG | processing property text value
+2026-04-13 11:07:20,364 | DEBUG | setting property text = Новий продаж
+2026-04-13 11:07:20,365 | DEBUG | Applying pack layout to btn_new_sale
+2026-04-13 11:07:20,365 | DEBUG | Setting widget tcl name to: btn_refresh
+2026-04-13 11:07:20,365 | DEBUG | processing property text value
+2026-04-13 11:07:20,368 | DEBUG | setting property text = Оновити
+2026-04-13 11:07:20,368 | DEBUG | Applying pack layout to btn_refresh
+2026-04-13 11:07:20,368 | DEBUG | Applying pack layout to toolbar_frame
+2026-04-13 11:07:20,369 | DEBUG | Setting widget tcl name to: content_frame
+2026-04-13 11:07:20,369 | DEBUG | Setting widget tcl name to: tree_sales
+2026-04-13 11:07:20,369 | DEBUG | processing property selectmode value
+2026-04-13 11:07:20,369 | DEBUG | setting property selectmode = browse
+2026-04-13 11:07:20,369 | DEBUG | Applying pack layout to tree_sales
+2026-04-13 11:07:20,390 | DEBUG | Applying pack layout to content_frame
+2026-04-13 11:07:20,390 | DEBUG | Applying pack layout to main_frame
+2026-04-13 11:07:20,390 | DEBUG | Applying pack layout to sales_root
