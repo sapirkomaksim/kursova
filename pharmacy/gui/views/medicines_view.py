@@ -2,6 +2,7 @@ import pygubu
 from services.medicine_service import MedicineService
 from gui.views.medicines_add_show_view import MedicineForm
 import tkinter.messagebox as messagebox
+from utils import resource_path
 
 
 class MedicinesView:
@@ -12,7 +13,7 @@ class MedicinesView:
 
         # Завантажуємо UI
         self.builder = pygubu.Builder()
-        self.builder.add_from_file("gui/ui/medicines.ui")
+        self.builder.add_from_file(resource_path("gui/ui/medicines.ui"))
 
         self.root = self.builder.get_object("medicines_root", parent)
 

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.5" author="PygubuDesigner 0.41.4">
+  <project>
+    <settings />
+    <customwidgets />
+    <resources />
+  </project>
+
+  <object class="ttk.Frame" id="customers_root" named="True">
+    <layout manager="pack">
+      <property name="expand">true</property>
+      <property name="fill">both</property>
+      <property name="side">top</property>
+    </layout>
+
+    <child>
+      <object class="ttk.Frame" id="toolbar_frame" named="True">
+        <layout manager="pack">
+          <property name="fill">y</property>
+          <property name="side">left</property>
+        </layout>
+
+        <child>
+          <object class="ttk.Button" id="btn_add" named="True">
+            <property name="text">Додати</property>
+            <layout manager="pack">
+              <property name="padx">5</property>
+              <property name="pady">5</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+
+        <child>
+          <object class="ttk.Button" id="btn_edit" named="True">
+            <property name="text">Редагувати</property>
+            <layout manager="pack">
+              <property name="padx">5</property>
+              <property name="pady">5</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+
+        <child>
+          <object class="ttk.Button" id="btn_delete" named="True">
+            <property name="text">Видалити</property>
+            <layout manager="pack">
+              <property name="padx">5</property>
+              <property name="pady">5</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+
+      </object>
+    </child>
+
+    <child>
+      <object class="ttk.Treeview" id="tree_customers" named="True">
+        <property name="selectmode">browse</property>
+        <layout manager="pack">
+          <property name="expand">true</property>
+          <property name="fill">both</property>
+          <property name="side">top</property>
+        </layout>
+      </object>
+    </child>
+
+  </object>
+</interface>

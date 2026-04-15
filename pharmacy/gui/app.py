@@ -8,6 +8,7 @@ from gui.views.reports_view import ReportsView
 from gui.views.users_view import UsersView
 from gui.views.suppliers_view import SuppliersView
 from gui.views.customers_view import CustomersView
+from utils import resource_path
 
 
 class PharmacyApp:
@@ -17,7 +18,7 @@ class PharmacyApp:
         self.current_user = current_user
 
         self.builder = pygubu.Builder()
-        self.builder.add_from_file("gui/ui/main.ui")
+        self.builder.add_from_file(resource_path("gui/ui/main.ui"))
 
         # main.ui створює tk.Tk сам
         self.root = self.builder.get_object("mainwindow")

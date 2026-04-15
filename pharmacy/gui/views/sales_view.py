@@ -7,6 +7,7 @@ from repositories.customer_repo import CustomerRepository
 from repositories.sale_repo import SaleRepository
 from services.sales_service import SalesService
 from repositories.batch_repo import BatchRepository
+from utils import resource_path
 
 
 class SalesView:
@@ -23,7 +24,7 @@ class SalesView:
         self.batch_repo = BatchRepository()
 
         self.builder = pygubu.Builder()
-        self.builder.add_from_file("gui/ui/sales.ui")
+        self.builder.add_from_file(resource_path("gui/ui/sales.ui"))
 
         self.root = self.builder.get_object("sales_root", master)
         self.btn_new = self.builder.get_object("btn_new_sale")

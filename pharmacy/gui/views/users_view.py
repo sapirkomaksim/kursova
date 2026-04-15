@@ -5,6 +5,7 @@ from repositories.user_repo import UserRepository
 from services.auth_service import AuthService
 
 
+
 class UsersView:
 
     def __init__(self, master, current_user):

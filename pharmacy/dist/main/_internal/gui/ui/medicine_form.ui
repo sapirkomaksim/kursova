@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.5" author="PygubuDesigner 0.41.4">
+  <project>
+    <settings />
+    <customwidgets />
+    <resources />
+  </project>
+
+  <object class="ttk.Frame" id="medicine_form" named="True">
+    <layout manager="pack">
+      <property name="side">top</property>
+      <property name="fill">both</property>
+      <property name="expand">true</property>
+    </layout>
+
+    <child>
+      <object class="ttk.Frame" id="form_root" named="True">
+        <layout manager="grid"/>
+
+        <containerlayout manager="grid">
+          <property name="columnconfigure">1 1</property>
+        </containerlayout>
+
+        <!-- Назва -->
+        <child>
+          <object class="ttk.Label">
+            <property name="text">Назва</property>
+            <layout manager="grid">
+              <property name="row">0</property>
+              <property name="column">0</property>
+              <property name="sticky">w</property>
+              <property name="padx">10</property>
+              <property name="pady">5</property>
+            </layout>
+          </object>
+        </child>
+
+        <child>
+          <object class="ttk.Entry" id="entry_name" named="True">
+            <layout manager="grid">
+              <property name="row">0</property>
+              <property name="column">1</property>
+              <property name="sticky">ew</property>
+              <property name="padx">10</property>
+              <property name="pady">5</property>
+            </layout>
+          </object>
+        </child>
+
+        <!-- Виробник -->
+        <child>
+          <object class="ttk.Label">
+            <property name="text">Виробник</property>
+            <layout manager="grid">
+              <property name="row">1</property>
+              <property name="column">0</property>
+              <property name="sticky">w</property>
+              <property name="padx">10</property>
+              <property name="pady">5</property>
+            </layout>
+          </object>
+        </child>
+
+        <child>
+          <object class="ttk.Entry" id="entry_manufacturer" named="True">
+            <layout manager="grid">
+              <property name="row">1</property>
+              <property name="column">1</property>
+              <property name="sticky">ew</property>
+              <property name="padx">10</property>
+              <property name="pady">5</property>
+            </layout>
+          </object>
+        </child>
+
+        <!--  Категорія -->
+        <child>
+          <object class="ttk.Label">
+            <property name="text">Категорія</property>
+            <layout manager="grid">
+              <property name="row">2</property>
+              <property name="column">0</property>
+              <property name="sticky">w</property>
+              <property name="padx">10</property>
+              <property name="pady">5</property>
+            </layout>
+          </object>
+        </child>
+
+        <child>
+          <object class="ttk.Combobox" id="combo_category" named="True">
+            <property name="state">readonly</property>
+            <layout manager="grid">
+              <property name="row">2</property>
+              <property name="column">1</property>
+              <property name="sticky">ew</property>
+              <property name="padx">10</property>
+              <property name="pady">5</property>
+            </layout>
+          </object>
+        </child>
+
+        <!-- Ціна -->
+        <child>
+          <object class="ttk.Label">
+            <property name="text">Ціна</property>
+            <layout manager="grid">
+              <property name="row">3</property>
+              <property name="column">0</property>
+              <property name="sticky">w</property>
+              <property name="padx">10</property>
+              <property name="pady">5</property>
+            </layout>
+          </object>
+        </child>
+
+        <child>
+          <object class="ttk.Entry" id="entry_price" named="True">
+            <layout manager="grid">
+              <property name="row">3</property>
+              <property name="column">1</property>
+              <property name="sticky">ew</property>
+              <property name="padx">10</property>
+              <property name="pady">5</property>
+            </layout>
+          </object>
+        </child>
+
+        <!-- Рецепт -->
+        <child>
+          <object class="ttk.Checkbutton" id="check_prescription" named="True">
+            <property name="text">Потребує рецепт</property>
+            <layout manager="grid">
+              <property name="row">4</property>
+              <property name="column">1</property>
+              <property name="sticky">w</property>
+              <property name="padx">10</property>
+              <property name="pady">5</property>
+            </layout>
+          </object>
+        </child>
+
+        <!-- Кнопки -->
+        <child>
+          <object class="ttk.Button" id="btn_cancel" named="True">
+            <property name="text">Відміна</property>
+            <layout manager="grid">
+              <property name="row">5</property>
+              <property name="column">0</property>
+              <property name="padx">10</property>
+              <property name="pady">10</property>
+            </layout>
+          </object>
+        </child>
+
+        <child>
+          <object class="ttk.Button" id="btn_save" named="True">
+            <property name="text">Зберегти</property>
+            <layout manager="grid">
+              <property name="row">5</property>
+              <property name="column">1</property>
+              <property name="padx">10</property>
+              <property name="pady">10</property>
+            </layout>
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </object>
+</interface>

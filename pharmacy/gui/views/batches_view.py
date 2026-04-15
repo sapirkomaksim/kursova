@@ -6,6 +6,7 @@ from database.connection import get_connection
 from repositories.batch_repo import BatchRepository
 from repositories.medicine_repo import MedicineRepository
 from repositories.supplier_repo import SupplierRepository
+from utils import resource_path
 
 
 def _is_date_yyyy_mm_dd(s: str) -> bool:
@@ -27,7 +28,7 @@ class BatchesView:
         self.sup_repo = SupplierRepository()
 
         self.builder = pygubu.Builder()
-        self.builder.add_from_file("gui/ui/batches.ui")
+        self.builder.add_from_file(resource_path("gui/ui/batches.ui"))
         self.root = self.builder.get_object("batches_root", master)
 
         self.tree = self.builder.get_object("tree_batches")

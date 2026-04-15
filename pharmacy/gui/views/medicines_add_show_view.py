@@ -3,6 +3,7 @@ import tkinter.messagebox as messagebox
 import pygubu
 
 from services.medicine_service import MedicineService
+from utils import resource_path
 
 
 class MedicineForm:
@@ -34,7 +35,7 @@ class MedicineForm:
         # -----------------------------
 
         self.builder = pygubu.Builder()
-        self.builder.add_from_file("gui/ui/medicine_form.ui")
+        self.builder.add_from_file(resource_path("gui/ui/medicine_form.ui"))
 
         self.frame = self.builder.get_object("medicine_form", self.top)
 

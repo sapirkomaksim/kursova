@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.5">
+  <object class="ttk.Frame" id="login_root" named="True">
+    <layout manager="pack">
+      <property name="expand">true</property>
+      <property name="fill">both</property>
+    </layout>
+
+    <child>
+      <object class="ttk.Label">
+        <property name="text">Вхід в систему</property>
+        <layout manager="pack">
+          <property name="pady">15</property>
+        </layout>
+      </object>
+    </child>
+
+    <child>
+      <object class="ttk.Label">
+        <property name="text">Логін</property>
+        <layout manager="pack"/>
+      </object>
+    </child>
+
+    <child>
+      <object class="ttk.Entry" id="entry_username" named="True">
+        <layout manager="pack">
+          <property name="pady">5</property>
+          <property name="padx">20</property>
+          <property name="fill">x</property>
+        </layout>
+      </object>
+    </child>
+
+    <child>
+      <object class="ttk.Label">
+        <property name="text">Пароль</property>
+        <layout manager="pack"/>
+      </object>
+    </child>
+
+    <child>
+      <object class="ttk.Entry" id="entry_password" named="True">
+        <property name="show">*</property>
+        <layout manager="pack">
+          <property name="pady">5</property>
+          <property name="padx">20</property>
+          <property name="fill">x</property>
+        </layout>
+      </object>
+    </child>
+
+    <child>
+      <object class="ttk.Button" id="btn_login" named="True">
+        <property name="text">Увійти</property>
+        <layout manager="pack">
+          <property name="pady">15</property>
+        </layout>
+      </object>
+    </child>
+
+  </object>
+</interface>

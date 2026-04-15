@@ -160,3 +160,29 @@
 2026-04-13 11:07:20,390 | DEBUG | Applying pack layout to content_frame
 2026-04-13 11:07:20,390 | DEBUG | Applying pack layout to main_frame
 2026-04-13 11:07:20,390 | DEBUG | Applying pack layout to sales_root
+2026-04-15 17:57:47,292 | DEBUG | Module pygubu.plugins.ttk.ttkstdwidgets loaded.
+2026-04-15 17:57:47,292 | DEBUG | Setting widget tcl name to: login_root
+2026-04-15 17:57:47,292 | DEBUG | No layout information for: (ttk.Label, None).
+2026-04-15 17:57:47,296 | DEBUG | processing property text value
+2026-04-15 17:57:47,296 | DEBUG | setting property text = Вхід в систему
+2026-04-15 17:57:47,300 | DEBUG | Applying pack layout to None
+2026-04-15 17:57:47,300 | DEBUG | No layout information for: (ttk.Label, None).
+2026-04-15 17:57:47,301 | DEBUG | processing property text value
+2026-04-15 17:57:47,301 | DEBUG | setting property text = Логін
+2026-04-15 17:57:47,303 | DEBUG | Applying pack layout to None
+2026-04-15 17:57:47,303 | DEBUG | Setting widget tcl name to: entry_username
+2026-04-15 17:57:47,304 | DEBUG | Applying pack layout to entry_username
+2026-04-15 17:57:47,304 | DEBUG | No layout information for: (ttk.Label, None).
+2026-04-15 17:57:47,304 | DEBUG | processing property text value
+2026-04-15 17:57:47,307 | DEBUG | setting property text = Пароль
+2026-04-15 17:57:47,307 | DEBUG | Applying pack layout to None
+2026-04-15 17:57:47,309 | DEBUG | Setting widget tcl name to: entry_password
+2026-04-15 17:57:47,309 | DEBUG | processing property show value
+2026-04-15 17:57:47,309 | DEBUG | setting property show = *
+2026-04-15 17:57:47,309 | DEBUG | Applying pack layout to entry_password
+2026-04-15 17:57:47,309 | DEBUG | No layout information for: (ttk.Button, btn_login).
+2026-04-15 17:57:47,309 | DEBUG | Setting widget tcl name to: btn_login
+2026-04-15 17:57:47,313 | DEBUG | processing property text value
+2026-04-15 17:57:47,313 | DEBUG | setting property text = Увійти
+2026-04-15 17:57:47,313 | DEBUG | Applying pack layout to btn_login
+2026-04-15 17:57:47,313 | DEBUG | Applying pack layout to login_root

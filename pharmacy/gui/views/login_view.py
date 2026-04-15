@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox
 import pygubu
-
 from services.auth_service import AuthService
+from utils import resource_path
 
 
 class LoginView:
@@ -14,7 +14,7 @@ class LoginView:
 
         # Завантажуємо UI
         self.builder = pygubu.Builder()
-        self.builder.add_from_file("gui/ui/login.ui")
+        self.builder.add_from_file(resource_path("gui/ui/login.ui"))
         self.root = self.builder.get_object("login_root", master)
 
         # Отримуємо віджети

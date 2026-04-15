@@ -3,6 +3,7 @@ from tkinter import ttk, messagebox
 import pygubu
 
 from repositories.supplier_repo import SupplierRepository
+from utils import resource_path
 
 class SuppliersView:
 
@@ -11,7 +12,7 @@ class SuppliersView:
         self.repo = SupplierRepository()
 
         self.builder = pygubu.Builder()
-        self.builder.add_from_file("gui/ui/suppliers.ui")
+        self.builder.add_from_file(resource_path("gui/ui/suppliers.ui"))
         self.root = self.builder.get_object("suppliers_root", master)
 
         self.tree = self.builder.get_object("tree_suppliers")

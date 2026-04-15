@@ -2,6 +2,7 @@ import pygubu
 import tkinter.messagebox as messagebox
 import tkinter.simpledialog as simpledialog
 from services.medicine_service import MedicineService
+from utils import resource_path
 
 
 class CategoriesView:
@@ -11,7 +12,7 @@ class CategoriesView:
         self.service = MedicineService()
 
         self.builder = pygubu.Builder()
-        self.builder.add_from_file("gui/ui/categories.ui")
+        self.builder.add_from_file(resource_path("gui/ui/categories.ui"))
 
         # вставляємо root вкладки у контейнер notebook
         self.root = self.builder.get_object("categories_root", parent)

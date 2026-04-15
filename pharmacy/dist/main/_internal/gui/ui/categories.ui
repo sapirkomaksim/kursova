@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.5" author="PygubuDesigner 0.41.4">
+  <project>
+    <settings />
+    <customwidgets />
+    <resources />
+  </project>
+
+  <object class="ttk.Frame" id="categories_root" named="True">
+    <layout manager="pack">
+      <property name="expand">true</property>
+      <property name="fill">both</property>
+      <property name="side">top</property>
+    </layout>
+
+    <!-- TREEVIEW -->
+    <child>
+      <object class="ttk.Treeview" id="tree_categories" named="True">
+        <property name="selectmode">extended</property>
+        <layout manager="pack">
+          <property name="expand">true</property>
+          <property name="fill">both</property>
+          <property name="padx">20</property>
+          <property name="pady">20</property>
+          <property name="side">top</property>
+        </layout>
+      </object>
+    </child>
+
+    <!-- КНОПКИ -->
+    <child>
+      <object class="ttk.Frame" id="buttons_frame">
+        <layout manager="pack">
+          <property name="fill">x</property>
+          <property name="side">bottom</property>
+          <property name="padx">20</property>
+          <property name="pady">10</property>
+        </layout>
+
+        <child>
+          <object class="ttk.Button" id="btn_delete_category" named="True">
+            <property name="text">Видалити</property>
+            <layout manager="pack">
+              <property name="side">right</property>
+              <property name="padx">10</property>
+            </layout>
+          </object>
+        </child>
+
+        <child>
+          <object class="ttk.Button" id="btn_add_category" named="True">
+            <property name="text">Додати</property>
+            <layout manager="pack">
+              <property name="side">right</property>
+            </layout>
+          </object>
+        </child>
+
+      </object>
+    </child>
+
+  </object>
+</interface>

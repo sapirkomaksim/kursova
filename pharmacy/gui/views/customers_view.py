@@ -3,6 +3,7 @@ from tkinter import ttk, messagebox
 import pygubu
 
 from repositories.customer_repo import CustomerRepository
+from utils import resource_path
 
 
 class CustomersView:
@@ -12,7 +13,7 @@ class CustomersView:
         self.repo = CustomerRepository()
 
         self.builder = pygubu.Builder()
-        self.builder.add_from_file("gui/ui/customers.ui")
+        self.builder.add_from_file(resource_path("gui/ui/customers.ui"))
 
         self.root = self.builder.get_object("customers_root", master)
 
