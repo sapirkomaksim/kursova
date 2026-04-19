@@ -1,8 +1,11 @@
-from database.connection import get_connection
 from models.medicine import Medicine
 
 
 class MedicineRepository:
+
+    def __init__(self, conn=None):
+        from database.connection import get_connection
+        self.conn = conn or get_connection()
 
     # ---------------------- ADD ----------------------
 
@@ -18,8 +21,7 @@ class MedicineRepository:
         if retail_price < 0:
             raise ValueError("Ціна не може бути від'ємною")
 
-        conn = get_connection()
-        cur = conn.cursor()
+        cur = self.conn.cursor()
 
         cur.execute(
             """
@@ -36,17 +38,14 @@ class MedicineRepository:
             )
         )
 
-        conn.commit()
-        med_id = cur.lastrowid
-        conn.close()
-        return med_id
+        self.conn.commit()
+        return cur.lastrowid
 
-    # ---------------------- LIST ALL (JOIN categories) ----------------------
+    # ---------------------- LIST ALL ----------------------
 
     def list_all(self) -> list[Medicine]:
 
-        conn = get_connection()
-        cur = conn.cursor()
+        cur = self.conn.cursor()
 
         cur.execute("""
             SELECT
@@ -63,31 +62,25 @@ class MedicineRepository:
         """)
 
         rows = cur.fetchall()
-        conn.close()
 
-        medicines = []
-
-        for row in rows:
-            medicines.append(
-                Medicine(
-                    id=row[0],
-                    name=row[1],
-                    manufacturer=row[2],
-                    category_id=row[3],
-                    prescription_required=bool(row[4]),
-                    retail_price=row[5],
-                    category_name=row[6]   # 🔥 важливо
-                )
+        return [
+            Medicine(
+                id=row[0],
+                name=row[1],
+                manufacturer=row[2],
+                category_id=row[3],
+                prescription_required=bool(row[4]),
+                retail_price=row[5],
+                category_name=row[6]
             )
+            for row in rows
+        ]
 
-        return medicines
-
-    # ---------------------- GET BY ID (JOIN) ----------------------
+    # ---------------------- GET BY ID ----------------------
 
     def get_by_id(self, med_id: int) -> Medicine | None:
 
-        conn = get_connection()
-        cur = conn.cursor()
+        cur = self.conn.cursor()
 
         cur.execute("""
             SELECT
@@ -104,7 +97,6 @@ class MedicineRepository:
         """, (int(med_id),))
 
         row = cur.fetchone()
-        conn.close()
 
         if not row:
             return None
@@ -116,35 +108,37 @@ class MedicineRepository:
             category_id=row[3],
             prescription_required=bool(row[4]),
             retail_price=row[5],
-            category_name=row[6]   # 🔥 важливо
+            category_name=row[6]
         )
 
     # ---------------------- UPDATE PRICE ----------------------
 
     def update_price(self, medicine_id: int, new_price: float) -> None:
 
-        conn = get_connection()
-        cur = conn.cursor()
+        if new_price < 0:
+            raise ValueError("Ціна не може бути від'ємною")
+
+        cur = self.conn.cursor()
 
         cur.execute(
             "UPDATE medicines SET retail_price=? WHERE id=?",
             (float(new_price), int(medicine_id))
         )
 
-        conn.commit()
-        conn.close()
+        self.conn.commit()
 
     # ---------------------- DELETE ----------------------
 
     def delete(self, med_id: int) -> None:
 
-        conn = get_connection()
-        cur = conn.cursor()
+        cur = self.conn.cursor()
 
-        cur.execute("DELETE FROM medicines WHERE id=?", (int(med_id),))
+        cur.execute(
+            "DELETE FROM medicines WHERE id=?",
+            (int(med_id),)
+        )
 
-        conn.commit()
-        conn.close()
+        self.conn.commit()
 
     # ---------------------- UPDATE FULL ----------------------
 
@@ -161,8 +155,7 @@ class MedicineRepository:
         if retail_price < 0:
             raise ValueError("Ціна не може бути від'ємною")
 
-        conn = get_connection()
-        cur = conn.cursor()
+        cur = self.conn.cursor()
 
         cur.execute("""
             UPDATE medicines
@@ -181,5 +174,4 @@ class MedicineRepository:
             int(med_id)
         ))
 
-        conn.commit()
-        conn.close()
+        self.conn.commit()

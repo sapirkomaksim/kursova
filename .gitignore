@@ -1,0 +1,51 @@
+# 🔹 Python cache
+pycache/
+*.py[cod]
+*$py.class
+
+# 🔹 Virtual env (якщо є)
+venv/
+.env/
+.venv/
+
+# 🔹 Build / dist (PyInstaller)
+build/
+
+
+# 🔹 Logs
+*.log
+sales.log
+
+# 🔹 IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 🔹 OS files
+.DS_Store
+Thumbs.db
+
+# 🔹 PyInstaller temp files
+*.toc
+*.pyz
+*.pkg
+*.exe
+
+# 🔹 Images (опціонально)
+# Якщо це не потрібно в репо
+# *.png
+
+# 🔹 Your specific files
+config.py
+
+# 🔹 Tests cache
+.pytest_cache/
+
+# 🔹 Coverage
+.coverage
+htmlcov/
+
+# 🔹 Misc
+*.bak
+*.tmp
